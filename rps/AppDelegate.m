@@ -7,15 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+
+#define kDBName @"rps.sqlite"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+    
+    NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDir = [documentPaths objectAtIndex:0];
+    self.databasePath = [documentDir stringByAppendingPathComponent:kDBName];
+    //NSLog(@"Database path: %@", self.databasePath);
+    
+    [self createAndCheckDatabase];
+    
     return YES;
 }
 
@@ -44,6 +55,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)createAndCheckDatabase
+{
+    BOOL success;
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    success = [fileManager  fileExistsAtPath:self.databasePath];
+    
+    if (success) {
+        NSLog(@"Database found at location");
+        return;
+    }
+    
+    NSLog(@"copying database");
+    
+    NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:kDBName];
+    NSError *error;
+    
+    [fileManager copyItemAtPath:databasePathFromApp toPath:self.databasePath error:&error];
+    NSLog(@"Database path: %@", self.databasePath);
+    
+    if (error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }
+    
 }
 
 @end

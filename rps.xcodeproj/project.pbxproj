@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41859291772105700944534 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E41859201772103900944534 /* FMDatabase.m */; };
+		E418592C1772106400944534 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E41859261772103900944534 /* FMDatabaseQueue.m */; };
+		E418592D1772106700944534 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E41859281772103900944534 /* FMResultSet.m */; };
+		E418592F177210C000944534 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E418592E177210C000944534 /* libsqlite3.0.dylib */; };
+		E41859321772161200944534 /* rps.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E4185930177211D500944534 /* rps.sqlite */; };
+		E434D0401772001500E37E34 /* Storyboard-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E460705A1771F58F00371CCA /* Storyboard-iPhone.storyboard */; };
+		E434D0411772001500E37E34 /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E460705B1771F59B00371CCA /* Storyboard-iPad.storyboard */; };
+		E434D042177201D300E37E34 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E460705D1771F5CA00371CCA /* MainViewController.m */; };
+		E434D052177208A400E37E34 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E434D051177208A100E37E34 /* RecordsViewController.m */; };
 		E460702C1771F53400371CCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E460702B1771F53400371CCA /* Foundation.framework */; };
 		E460702E1771F53400371CCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E460702D1771F53400371CCA /* CoreGraphics.framework */; };
 		E46070301771F53400371CCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E460702F1771F53400371CCA /* UIKit.framework */; };
@@ -32,6 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E418591F1772103900944534 /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E41859201772103900944534 /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E41859211772103900944534 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E41859221772103900944534 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E41859231772103900944534 /* FMDatabasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E41859241772103900944534 /* FMDatabasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E41859251772103900944534 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E41859261772103900944534 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E41859271772103900944534 /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E41859281772103900944534 /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E418592E177210C000944534 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E4185930177211D500944534 /* rps.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rps.sqlite; sourceTree = SOURCE_ROOT; };
+		E434D050177208A100E37E34 /* RecordsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
+		E434D051177208A100E37E34 /* RecordsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
 		E46070281771F53400371CCA /* rps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E460702B1771F53400371CCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E460702D1771F53400371CCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +71,10 @@
 		E460704C1771F53500371CCA /* rpsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rpsTests-Info.plist"; sourceTree = "<group>"; };
 		E460704E1771F53500371CCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E46070501771F53500371CCA /* rpsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rpsTests.m; sourceTree = "<group>"; };
+		E460705A1771F58F00371CCA /* Storyboard-iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Storyboard-iPhone.storyboard"; sourceTree = "<group>"; };
+		E460705B1771F59B00371CCA /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
+		E460705C1771F5CA00371CCA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E460705D1771F5CA00371CCA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E418592F177210C000944534 /* libsqlite3.0.dylib in Frameworks */,
 				E460702E1771F53400371CCA /* CoreGraphics.framework in Frameworks */,
 				E46070301771F53400371CCA /* UIKit.framework in Frameworks */,
 				E460702C1771F53400371CCA /* Foundation.framework in Frameworks */,
@@ -74,6 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E41859311772136A00944534 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E418591F1772103900944534 /* FMDatabase.h */,
+				E41859201772103900944534 /* FMDatabase.m */,
+				E41859211772103900944534 /* FMDatabaseAdditions.h */,
+				E41859221772103900944534 /* FMDatabaseAdditions.m */,
+				E41859231772103900944534 /* FMDatabasePool.h */,
+				E41859241772103900944534 /* FMDatabasePool.m */,
+				E41859251772103900944534 /* FMDatabaseQueue.h */,
+				E41859261772103900944534 /* FMDatabaseQueue.m */,
+				E41859271772103900944534 /* FMResultSet.h */,
+				E41859281772103900944534 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
 		E460701F1771F53400371CCA = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +141,7 @@
 		E460702A1771F53400371CCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E418592E177210C000944534 /* libsqlite3.0.dylib */,
 				E460702B1771F53400371CCA /* Foundation.framework */,
 				E460702D1771F53400371CCA /* CoreGraphics.framework */,
 				E460702F1771F53400371CCA /* UIKit.framework */,
@@ -107,9 +153,16 @@
 		E46070311771F53400371CCA /* rps */ = {
 			isa = PBXGroup;
 			children = (
+				E4185930177211D500944534 /* rps.sqlite */,
+				E41859311772136A00944534 /* FMDB */,
 				E460703A1771F53400371CCA /* AppDelegate.h */,
 				E460703B1771F53400371CCA /* AppDelegate.m */,
+				E460705C1771F5CA00371CCA /* MainViewController.h */,
+				E460705D1771F5CA00371CCA /* MainViewController.m */,
+				E434D050177208A100E37E34 /* RecordsViewController.h */,
+				E434D051177208A100E37E34 /* RecordsViewController.m */,
 				E460703D1771F53400371CCA /* Images.xcassets */,
+				E460705E1771F5F600371CCA /* UI */,
 				E46070321771F53400371CCA /* Supporting Files */,
 			);
 			path = rps;
@@ -142,6 +195,15 @@
 				E460704D1771F53500371CCA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E460705E1771F5F600371CCA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E460705A1771F58F00371CCA /* Storyboard-iPhone.storyboard */,
+				E460705B1771F59B00371CCA /* Storyboard-iPad.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41859321772161200944534 /* rps.sqlite in Resources */,
+				E434D0401772001500E37E34 /* Storyboard-iPhone.storyboard in Resources */,
+				E434D0411772001500E37E34 /* Storyboard-iPad.storyboard in Resources */,
 				E46070361771F53400371CCA /* InfoPlist.strings in Resources */,
 				E460703E1771F53400371CCA /* Images.xcassets in Resources */,
 			);
@@ -240,7 +305,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E460703C1771F53400371CCA /* AppDelegate.m in Sources */,
+				E418592C1772106400944534 /* FMDatabaseQueue.m in Sources */,
+				E434D042177201D300E37E34 /* MainViewController.m in Sources */,
 				E46070381771F53400371CCA /* main.m in Sources */,
+				E41859291772105700944534 /* FMDatabase.m in Sources */,
+				E418592D1772106700944534 /* FMResultSet.m in Sources */,
+				E434D052177208A400E37E34 /* RecordsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +507,7 @@
 				E46070561771F53500371CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E46070571771F53500371CCA /* Build configuration list for PBXNativeTarget "rpsTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +516,7 @@
 				E46070591771F53500371CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
