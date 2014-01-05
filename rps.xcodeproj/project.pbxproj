@@ -13,7 +13,6 @@
 		E418592F177210C000944534 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E418592E177210C000944534 /* libsqlite3.0.dylib */; };
 		E41859321772161200944534 /* rps.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E4185930177211D500944534 /* rps.sqlite */; };
 		E434D0401772001500E37E34 /* Storyboard-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E460705A1771F58F00371CCA /* Storyboard-iPhone.storyboard */; };
-		E434D0411772001500E37E34 /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E460705B1771F59B00371CCA /* Storyboard-iPad.storyboard */; };
 		E434D042177201D300E37E34 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E460705D1771F5CA00371CCA /* MainViewController.m */; };
 		E434D052177208A400E37E34 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E434D051177208A100E37E34 /* RecordsViewController.m */; };
 		E460702C1771F53400371CCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E460702B1771F53400371CCA /* Foundation.framework */; };
@@ -72,7 +71,6 @@
 		E460704E1771F53500371CCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E46070501771F53500371CCA /* rpsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rpsTests.m; sourceTree = "<group>"; };
 		E460705A1771F58F00371CCA /* Storyboard-iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Storyboard-iPhone.storyboard"; sourceTree = "<group>"; };
-		E460705B1771F59B00371CCA /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
 		E460705C1771F5CA00371CCA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E460705D1771F5CA00371CCA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				E460705A1771F58F00371CCA /* Storyboard-iPhone.storyboard */,
-				E460705B1771F59B00371CCA /* Storyboard-iPad.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 			files = (
 				E41859321772161200944534 /* rps.sqlite in Resources */,
 				E434D0401772001500E37E34 /* Storyboard-iPhone.storyboard in Resources */,
-				E434D0411772001500E37E34 /* Storyboard-iPad.storyboard in Resources */,
 				E46070361771F53400371CCA /* InfoPlist.strings in Resources */,
 				E460703E1771F53400371CCA /* Images.xcassets in Resources */,
 			);

@@ -22,6 +22,7 @@
 @property (nonatomic, assign) int lossCount;
 
 - (IBAction)closeRecordsWindow:(id)sender;
+- (IBAction)resetScore:(id)sender;
 
 @end
 
@@ -95,6 +96,31 @@
     }
     
     
+}
+
+- (IBAction)resetScore:(id)sender
+{
+    NSLog(@"Resetting score..");
+    NSString *documentsDir = [self getDocumentsPath];
+    NSString *databasePath = [documentsDir stringByAppendingPathComponent:kDBName];
+    
+    FMDatabase *db = [FMDatabase databaseWithPath:databasePath];
+    if (db) {
+        [db open];
+        
+        BOOL success = [db executeUpdate:@"UPDATE record SET win = '0', loss = '0' WHERE id = '1'"];
+        
+        if (success) {
+            NSLog(@"Score was reset");
+            [self getDatabaseResults];
+        } else {
+            NSLog(@"There was an error resetting the score: %i %@", [db lastErrorCode], [db lastErrorMessage]);
+        }
+    } else {
+        NSLog(@"There was an error accessing the database: %i %@", [db lastErrorCode], [db lastErrorMessage]);
+    }
+    
+    [db close];
 }
 
 @end
